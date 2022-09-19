@@ -1,9 +1,9 @@
+    let url="https://type.fit/api/quotes";
 
     function entierAleatoire(min, max)
     {
      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-
 
     async function getUser(url){
       var entier = entierAleatoire(1, 100);
@@ -22,6 +22,5 @@
           p2.textContent = user2[entier].author;
          }
     }
-
     getUser("https://type.fit/api/quotes");
-    let url="https://type.fit/api/quotes";
+ 
