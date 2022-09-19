@@ -1,0 +1,60 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    animation: random 10s infinite;
+  }
+  
+  @keyframes anim { from { margin-left:-20%; } to { margin-left:20%; }  }  /* de -20 a 20 left , anim*/
+  @keyframes anima { from { margin-left:20%; } to { margin-left:-20%; }  }  /* de -20 a 20 left , anim*/
+  
+  div {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  i {
+      color: rgb(255, 255, 255);
+      font-size: 6em;
+      font-weight: bolder;
+      animation: 4s linear infinite alternate ;
+  }
+  
+  #citation {
+    color: black;
+    font-size: 3em;
+    font-weight: bolder;
+    animation: 4s linear infinite alternate anim;
+  }
+  
+  #auteur  {
+    color:rgb(0, 0, 0) ;
+    font-size: 2em;
+    font-weight: bolder;
+    animation: 4s linear infinite alternate anima;
+  }
+  
+      @keyframes random {
+      15% { background-color: #e3ff87; } 
+      30% { background-color: #ff7c96; } 
+      45% { background-color: #6ffffa; }
+      60% { background-color: #ef6b30; } 
+      75% { background-color: #bf69b1; } 
+      }
+  
+          #btn{
+            font-size: 1.8em;
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
+            border: transparent;
+            animation: 4s linear infinite alternate ;
+          }
+  
+  
+  
+          
+  /*
+  @keyframes anim { from { margin-left:-20%; } to { margin-left:20%; }  }
+          animation: 6s linear infinite alternate anim;
+  */
